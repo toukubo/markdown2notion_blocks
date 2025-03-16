@@ -1,0 +1,27 @@
+The `@tryfabric/martian` package is a NodeJS library that converts Markdown to Notion blocks and Rich Text. It's designed to simplify using the Notion SDK and API.
+
+Here's how to get started with the `tryfabric/martian` package in a NodeJS project:
+
+1.  **Installation:**
+
+    ```bash
+    npm i @tryfabric/martian
+    ```
+
+2.  **Usage Example:**
+
+    ```javascript
+    // Using Node.js import
+    const [markdownToBlocks, markdownToRichText] = require('@tryfabric/martian');
+
+    //Or, in a TypeScript environment
+    //import { markdownToBlocks, markdownToRichText } from '@tryfabric/martian';
+
+    const markdown = '# Hello Notion!';
+
+    const blocks = markdownToBlocks(markdown);
+
+    console.log(blocks);
+    ```
+
+    This will convert the Markdown string into an array of Notion blocks that you can then use with the Notion API to create or update content in your Notion workspace.
